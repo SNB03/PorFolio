@@ -1,0 +1,10 @@
+.gridContainer{
+  display:grid;
+  grid-template-rows: 1fr;
+   row-gap: 1rem;
+   padding: 1rem;
+}
+.gridContainer>div{
+  border: 2px solid rgb(15, 11, 11);
+  height: 50vw;
+}

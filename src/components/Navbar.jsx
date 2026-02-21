@@ -19,7 +19,7 @@ function Navbar() {
             onClick={toggleMenu} 
             aria-label="Toggle menu"
             role="button">
-      {isOpen ? "╳" : "☰"}
+      {isOpen ? "X" : "☰"}
     </div>
   </div>
 
@@ -27,7 +27,18 @@ function Navbar() {
 
       <ul className="nav-links flex">
          {navItems.map((item) => (
-            <li key={item}><a href={`#${item}`}>{item}</a></li>
+          <li key={item} onClick={closeMenu}>
+      {item === "Resume" ? (
+        <a href="/Sujit_Resume.pdf" download="Sujit_Resume.pdf">
+          {item}
+        </a>
+      ) : (
+        
+        <a href={`#${item}`}>
+          {item}
+        </a>
+      )}
+    </li>
           ))}
         
       </ul>
