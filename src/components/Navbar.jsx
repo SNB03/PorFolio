@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import "./Navbar.css";
-import "./Home"
+
 function Navbar() {
   const [isOpen,setIsOpen]=useState(false);
  const navItems=["Home","About","Resume","Skills","Projects","Contact"]
