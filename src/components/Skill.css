@@ -1,6 +1,7 @@
 
 .skillSection {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 4rem 2rem;
@@ -15,21 +16,19 @@
   margin-bottom: 2rem;
 }
 
-/* Flexbox makes the badges flow naturally and wrap to the next line when out of space */
 .skill-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1.2rem;
   max-width: 800px;
-  margin: 0 auto; /* Centers the container */
+  margin: 0 auto; 
 }
 
-/* Styling the individual skill cards */
 .skill-badge {
   background: white;
   padding: 0.8rem 1.5rem;
-  border-radius: 30px; /* Pill-shaped badges */
+  border-radius: 30px; 
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   color: #444;
@@ -39,11 +38,11 @@
   cursor: default;
 }
 
-/* A nice hover effect so it feels interactive */
+
 .skill-badge:hover {
-  transform: translateY(-5px); /* Floats up slightly */
+  transform: translateY(-5px);
   color: white;
-  background-color: rgb(238, 140, 12); /* Matches your Navbar hover color */
+  background-color: rgb(238, 140, 12); 
   box-shadow: 0 8px 15px rgba(238, 140, 12, 0.2);
   border-color: rgb(238, 140, 12);
 }

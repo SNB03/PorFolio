@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 function Navbar() {
   const [isOpen,setIsOpen]=useState(false);
- const navItems=["Home","About","Resume","Skills","Projects","Contact","Feedback"]
+ const navItems=["Home","About","Resume","Skills","Projects","Contact"]
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };

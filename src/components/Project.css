@@ -1,0 +1,99 @@
+.project-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 2rem;
+  background-color: #ffffff;
+}
+
+.project-section h2 {
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+/* Responsive Grid Magic */
+.project-grid {
+  display: grid;
+  /* Automatically creates columns that fit the screen width */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+  max-width: 1100px; /* Prevents cards from stretching too wide on huge monitors */
+}
+
+/* Individual Card Styling */
+.card {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid #eee;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.project-content {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+  /* flex-grow: 1 pushes the buttons to the very bottom, even if descriptions are different lengths */
+  flex-grow: 1; 
+  margin-bottom: 1.5rem;
+}
+
+.tech-stack {
+  font-size: 0.9rem;
+  color: rgb(238, 140, 12);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+/* Button Layout */
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 0.6rem 1rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-align: center;
+  transition: all 0.2s ease;
+  flex: 1; /* Makes both buttons perfectly equal in width */
+}
+
+.github {
+  background-color: #333;
+  color: white;
+}
+
+.github:hover {
+  background-color: #000;
+}
+
+.deploy {
+  background-color: rgb(238, 140, 12);
+  color: white;
+}
+
+.deploy:hover {
+  background-color: rgb(215, 125, 10);
+}
