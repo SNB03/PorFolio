@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import "./Navbar.css";
-
+import "./Home"
 function Navbar() {
   const [isOpen,setIsOpen]=useState(false);
  const navItems=["Home","About","Resume","Skills","Projects","Contact"]
@@ -51,15 +51,24 @@ function Navbar() {
     <div className={`sidebar-container ${isOpen ? "active" : ""}`}>
         <ul className="sidebar-links">
           {navItems.map((item) => (
-            <li key={item} onClick={closeMenu}>
-            
-              <a href={`#${item}`}>{item}</a>
-            </li>
+          <li key={item} onClick={closeMenu}>
+      {item === "Resume" ? (
+        <a href="/Sujit_Resume.pdf" download="Sujit_Resume.pdf">
+          {item}
+        </a>
+      ) : (
+        
+        <a href={`#${item}`}>
+          {item}
+        </a>
+      )}
+    </li>
           ))}
           
           
         </ul>
       </div>
+      
     </>
   );
 }

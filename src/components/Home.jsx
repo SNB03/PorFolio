@@ -12,7 +12,6 @@ function Home() {
                 <About></About>
                 <Skill></Skill>
                 <Project></Project>
-              
                 <Footer></Footer>
                  
                  
