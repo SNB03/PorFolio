@@ -2,13 +2,13 @@
   import About from "./About";
   import Skill from "./Skill"
   import Project from "./Project"
-  
+  import Hero from "./Hero";
   import Footer from "./Footer";
 
 function Home() {
   return(<>
           <div className="gridContainer" id="Home">
-            
+            <Hero/>
                 <About></About>
                 <Skill></Skill>
                 <Project></Project>

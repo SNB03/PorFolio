@@ -1,0 +1,93 @@
+.hero-section {
+  min-height: calc(100vh - 80px); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 2rem;
+  background-color: #ffffff;
+}
+
+.hero-content {
+  max-width: 800px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero-greeting {
+  color: rgb(238, 140, 12); 
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.hero-name {
+  font-size: clamp(3rem, 6vw, 5rem); 
+  color: #222;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: #666;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  padding: 0.8rem 1.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: rgb(238, 140, 12);
+  color: white;
+  border: 2px solid rgb(238, 140, 12);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: rgb(238, 140, 12);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #ddd;
+}
+
+.btn-secondary:hover {
+  border-color: #333;
+  background-color: #f9f9f9;
+}
+
+
+@media (max-width: 480px) {
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-buttons a {
+    text-align: center;
+    width: 100%;
+  }
+}

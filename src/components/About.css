@@ -56,3 +56,45 @@
     align-items: center; 
   }
 }
+
+.about-highlights {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border-left: 4px solid rgb(238, 140, 12);
+}
+
+.highlight-item {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+.highlight-item strong {
+  color: #222;
+}
+
+.leetcode-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 0.4rem; 
+}
+
+
+.leetcode-icon {
+margin-left: 0.5rem; 
+  color: #333;
+  transition: all 0.3s ease;
+  display: flex;      
+  align-items: center;
+}
+
+.leetcode-icon:hover {
+  color: #FFA116; 
+  transform: scale(1.15); 
+}
