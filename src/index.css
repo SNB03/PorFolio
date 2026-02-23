@@ -1,6 +1,4 @@
-body{
-  /* background-color: rgb(31, 111, 177); */
-}
+
 *{
   margin:0;
   padding: 0;
@@ -17,4 +15,19 @@ a{
 a:focus,a:active{
   outline: none;
 -webkit-tap-highlight-color: transparent;
+}
+body.dark-mode {
+  background-color: #121212;
+  color: #f9f9f9;
+}
+
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode p {
+  color: #f9f9f9;
+}
+
+body.dark-mode section {
+  background-color: #121212;
 }

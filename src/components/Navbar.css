@@ -1,18 +1,76 @@
 .mobile-left{
   display: none;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
-  background: white;
+
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); 
   z-index: 1000;
-  
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+
+.nav-links li a.active {
+  color: rgb(238, 140, 12);
+  font-weight: 600;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.1);
+  color: rgb(238, 140, 12);
+}
+
+body.dark-mode .navbar {
+  background: rgba(30, 30, 30, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .logo,
+body.dark-mode .nav-links li a,
+body.dark-mode .theme-toggle,
+body.dark-mode .hamburger {
+  color: #f9f9f9;
+ 
+}
+body.dark-mode .nav-links li a.active{
+   transform: scale(1.1);
+  color: rgb(238, 140, 12);
+}
+body.dark-mode .theme-toggle:hover {
+  transform: scale(1.1);
+  color: rgb(238, 140, 12);
+}
+body.dark-mode .sidebar-container {
+  background: #222;
+}
+body.dark-mode .nav-links :hover {
+  color: rgb(238, 140, 12);
+  font-weight: 600;
+}
+body.dark-mode .sidebar-links li a {
+  color: #f9f9f9;
 }
 
 .logo {

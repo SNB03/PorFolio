@@ -1,50 +1,70 @@
 import "./About.css";
 import photo from "./../Photos/Mine.jpg";
 import { SiLeetcode } from "react-icons/si";
+import { FaDownload, FaGraduationCap, FaCode, FaLaptopCode } from "react-icons/fa";
 
 function About() {
   return (
     <section className="about-section" id="About">
       <div className="aboutContainer">
         
-        <img src={photo} alt="Sujit - Computer Engineering Student" className="about-img" />
-        
-        <div className="info">
-          <h2>About Me</h2>
-          <p>
-            Hello! I am a highly motivated Computer Engineering student at PICT College, 
-            passionate about deep-diving into the world of technology. I aspire to become a 
-            Software Engineer, with a strong focus on Data Structures and Algorithms as well 
-            as Web Development.
-          </p>
-          <p>
-            Currently, I am actively building web applications, exploring backend frameworks, 
-            and consistently solving DSA problems in Java to strengthen my logical thinking. 
-            I am always looking forward to new opportunities to connect, collaborate on 
-            impactful projects, and grow in this dynamic field.
-          </p>
-
-          <div className="about-highlights">
-            <div className="highlight-item">
-              <strong>Education:</strong> PICT College, Pune (GPA: 9.82)
-            </div>
-            <div className="highlight-item">
-              <strong>Exploring:</strong> React, Java, HTML/CSS, and backend frameworks
-            </div>
-         
-            <div className="highlight-item leetcode-item">
-              
-             <span>
-    <strong>Problem Solving:</strong> Solved 400+ DSA Problems on LeetCode (365-Days Badge & 353-Day Streak)
-  </span>
-  <a href="https://leetcode.com/u/sbcoder03/" target="_blank" rel="noopener noreferrer" className="leetcode-icon">
-    <SiLeetcode size={22}/>
-  </a>
-              
+       
+        <div className="about-img-wrapper">
+          <img src={photo} alt="Sujit Bhojrao" className="about-img" />
+          
+          <div className="floating-badge">
+            <FaGraduationCap className="badge-icon" />
+            <div className="badge-text">
+              <span>PICT College</span>
+              <strong>9.82 CGPA</strong>
             </div>
           </div>
         </div>
         
+       
+        <div className="info">
+          <h2>About Me</h2>
+          <p>
+            Hello! I am a Computer Engineering student passionate about deep-diving into the world of technology. I specialize in <strong>Data Structures and Algorithms</strong> and <strong>Full-Stack Web Development</strong>.
+          </p>
+          <p>
+            I love translating complex logic into clean, efficient code. Whether I'm building responsive web applications or optimizing backend architectures, I am always eager to learn, build, and grow.
+          </p>
+
+         
+          <div className="info-cards">
+            
+            <a 
+    href="https://leetcode.com/u/sbcoder03/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="info-card leetcode-card-link"
+    style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}
+  >
+    <SiLeetcode className="card-icon" />
+    <h3>400+ Problems</h3>
+    <p>Solved on LeetCode with a 350+ day streak.</p>
+  </a>
+
+            <div className="info-card">
+              <FaLaptopCode className="card-icon" />
+              <h3>Full-Stack</h3>
+              <p>Building apps with React, Java, and MERN.</p>
+            </div>
+
+            <div className="info-card">
+              <FaCode className="card-icon" />
+              <h3>Problem Solver</h3>
+              <p>Strong foundation in logic and algorithms.</p>
+            </div>
+
+          </div>
+
+          <a href="/Sujit_Resume.pdf" download="Sujit_Resume.pdf" className="about-resume-btn">
+            <FaDownload /> Download Resume
+          </a>
+
+        </div>
       </div>
     </section>
   );
