@@ -16,7 +16,7 @@ function About() {
             <FaGraduationCap className="badge-icon" />
             <div className="badge-text">
               <span>PICT College</span>
-              <strong>9.82 CGPA</strong>
+              <strong>9.73GPA</strong>
             </div>
           </div>
         </div>

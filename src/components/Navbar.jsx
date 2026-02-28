@@ -72,9 +72,7 @@ function Navbar() {
           ))}
 
           <li>
-            <button className="theme-toggle" onClick={toggleTheme} aria-label="Toggle Dark Mode">
-              {isDarkMode ? <FaSun /> : <FaMoon />}
-            </button>
+           
           </li>
         </ul>
       </nav>
@@ -85,9 +83,7 @@ function Navbar() {
       <div className={`sidebar-container ${isOpen ? "active" : ""}`}>
         <ul className="sidebar-links">
           <li style={{ marginBottom: "1rem" }}>
-            <button className="theme-toggle" onClick={toggleTheme}>
-              {isDarkMode ? <><FaSun /> &nbsp; Light Mode</> : <><FaMoon /> &nbsp; Dark Mode</>}
-            </button>
+           
           </li>
           
           {navItems.map((item) => (

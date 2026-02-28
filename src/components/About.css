@@ -196,13 +196,6 @@ body.dark-mode .badge-text strong{
     align-items: center; 
   }
 
-  .floating-badge {
-    right: 50%;
-    transform: translateX(50%);
-    bottom: -25px;
-    animation: none; 
-  }
-
   .about-img-wrapper:hover::before {
     top: 15px;
     left: 15px; 
