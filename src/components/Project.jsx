@@ -30,7 +30,7 @@ export default function Project() {
       description: "A responsive, single-page developer portfolio built with modern UI/UX principles to showcase my projects, skills, and resume.",
       techStack: ["React", "CSS", "Vite"],
       github: "https://github.com/SNB03/PorFolio",
-      live: "https://your-portfolio-link.com",
+      live: "https://sujitbhojraoportfolio.vercel.app/",
       image:PortFolio
     }
   ];
